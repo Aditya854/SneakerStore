@@ -12,6 +12,7 @@
   background-color: black;
 }
 
+
 .logo {
   margin-top: 0;
   height: auto;
@@ -35,4 +36,24 @@
 
 .cart {
   display: flex;
+}
+
+/* FOOTER CSS */
+footer{
+  padding: 2rem 0 ;
+  background-color: #182334;
+  color: #fff;
+}
+
+footer h2{
+  color: #fff;
+}
+
+footer li{
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  cursor: pointer;
+  color: #fff;
+  margin: 1rem 0;
 }
