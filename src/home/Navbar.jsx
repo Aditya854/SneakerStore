@@ -1,27 +1,39 @@
 import React from 'react';
-import logo from '../Resources/logo.png';
+import logo from '../Resources/LOGO LIGHT.png';
 
 export default function Navbar() {
   return (
     <nav className='nav'>
+
+      <div className="">
         <img className='logo' src={logo} alt='store logo' />
+      </div>
 
       <div className='links'>
         <ul className='links-list'>
-          <li id='nav-links' className='mx-3 text-white'>Men</li>
-          <li id='nav-links' className='mx-3 text-white'>Women</li>
-          <li id='nav-links' className='mx-3 text-white'>Kids</li>
-          <li id='nav-links' className='mx-3 text-white'>New Arrivals</li>
-          <li id='nav-links' className='mx-3 text-white'>Sale</li>
+          <a id='nav-links' href="#">
+            <li className='mx-3'>Men</li>
+          </a>
+          <a id='nav-links' href="#">
+            <li className='mx-3'>Women</li>
+          </a>
+          <a id='nav-links' href="#">
+            <li className='mx-3'>Kids</li>
+          </a>
+          <a id='nav-links' href="#">
+            <li  className='mx-3'>New Arrivals</li>
+          </a>
+          <a id='nav-links' href="#">
+            <li className='mx-3'>Sale</li>
+          </a>
         </ul>
       </div>
 
       <div className='cart'>
-        <button className='btn btn-outline-primary mx-2'>
-          cart
-        </button>
-        <button className='profile btn btn-outline-primary mx-2'>profile</button>
-        <button className='btn btn-outline-primary mx-2'>sign-in</button>
+
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#"><i class="fas fa-user-circle"></i></a>
+
       </div>
     </nav>
   );

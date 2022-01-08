@@ -1,24 +1,48 @@
+:root{
+  --text-light: #e8feff;
+  --text-dark: #000;
+  --bg-light: #e8feff;
+  --bg-dark: #000;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'PT Sans', sans-serif;
+  background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}
+
+a{
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--bg-light);
+  opacity: 0.8;
+}
+
+/* NAVBAR */
 .nav {
-  height: 5rem;
+  padding-inline: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: black;
+  text-transform: uppercase;
 }
 
 
 .logo {
   margin-top: 0;
-  height: auto;
-  width: auto;
-  max-height: 72px;
-  max-width: 250px;
+  width: 5rem;
 }
 
 .links-list {
@@ -31,29 +55,54 @@
 }
 
 #nav-links {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 0 0.8rem;
+  text-decoration: none;
+  color: var(--text-light);
 }
 
 .cart {
   display: flex;
 }
 
-/* FOOTER CSS */
-footer{
-  padding: 2rem 0 ;
-  background-color: #182334;
-  color: #fff;
+.cart>a{
+  padding-inline: 1.5rem;
+  font-size: 1.7rem;
+  color: var(--text-light);
 }
 
-footer h2{
+
+
+
+/* FOOTER CSS */
+footer{
+  margin-top: 100vh;
+  padding: 4rem 0 2rem;
+  background-color: var(--bg-dark);
   color: #fff;
+  text-align: center;
+}
+
+footer h5{
+  color: var(--text-light);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+footer a{
+  color: var(--text-light);
 }
 
 footer li{
   list-style: none;
-  font-size: 1.3rem;
-  font-weight: lighter;
-  cursor: pointer;
-  color: #fff;
+  font-size: 1rem;
   margin: 1rem 0;
+}
+
+.footer-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
 }
