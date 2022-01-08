@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from '../Resources/LOGO LIGHT.png';
+import logoLight from '../Resources/LOGO LIGHT.png';
+import logoDark from '../Resources/LOGO BLACK.png';
 
 export default function Navbar() {
   return (
     <nav className='nav'>
 
       <div className="">
-        <img className='logo' src={logo} alt='store logo' />
+        <img className='logo' src={logoLight} alt='store logo' />
       </div>
 
       <div className='links'>
