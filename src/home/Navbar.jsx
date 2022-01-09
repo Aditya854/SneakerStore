@@ -37,7 +37,6 @@ export default function Navbar() {
           <a href="#"><i class="fas fa-shopping-cart"></i></a>
           <hr/>
           <a href="#" onClick={()=> setForm(true)}><i class="fas fa-user-circle"></i></a>
-
       </div>
     </nav>
   );
