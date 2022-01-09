@@ -76,46 +76,8 @@ a:hover {
   color: var(--text-light);
 }
 
-/* FOOTER CSS */
-footer {
-  margin-top: 100vh;
-  padding: 4rem 5rem;
-  background-color: var(--bg-dark);
-  color: #fff;
-}
-
-footer h5 {
-  color: var(--text-light);
-  font-size: 1rem;
-  letter-spacing: 2px;
-}
-
-footer a {
-  color: var(--text-light);
-}
-
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-}
-.footer-col {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-.footer-col > h5 {
-  margin-bottom: 1.5rem;
-}
-.footer-col > a {
-  margin: 0.4rem 0;
-}
-.media-link {
-  padding-right: 1rem;
-  font-size: 1.8rem;
-}
 
 /* Sign-in form */
-
 .main-form-div {
   position: relative;
   background-color: #fff;
@@ -127,6 +89,7 @@ footer a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  z-index: 2;
 }
 
 .close {
@@ -209,4 +172,55 @@ footer a {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   transition: opacity 0.5s ease;
+  z-index: 2;
 }
+
+
+/* CAROUSEL */
+.carousel{
+  margin-top: 5rem;
+}
+.carouselImage{
+  /* transform: scaleY(0.7); */
+  height: 90.3vh;
+}
+
+
+/* FOOTER CSS */
+footer {
+  margin-top: 100vh;
+  padding: 4rem 5rem;
+  background-color: var(--bg-dark);
+  color: #fff;
+}
+
+footer h5 {
+  color: var(--text-light);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+footer a {
+  color: var(--text-light);
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.footer-col > h5 {
+  margin-bottom: 1.5rem;
+}
+.footer-col > a {
+  margin: 0.4rem 0;
+}
+.media-link {
+  padding-right: 1rem;
+  font-size: 1.8rem;
+}
+

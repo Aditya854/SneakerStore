@@ -3,12 +3,14 @@ import React from 'react';
 import Navbar from './home/Navbar';
 import Footer from './home/Footer';
 import SignIn from './home/SignIn';
+import Caraosuel from './home/Caraousel';
 
 function App() {
   return (
     <div>
       <Navbar/>
-        <SignIn/>
+      <SignIn/>
+      <Caraosuel/>
       <Footer/>
     </div>
   );

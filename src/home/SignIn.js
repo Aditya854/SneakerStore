@@ -1,11 +1,16 @@
 import react from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import reactDom from 'react-dom';
 import logo_dark from '../Resources/LOGO BLACK.png';
 import { useGlobalContext } from '../context'; 
 
+
 export default function SignIn() {
   const {form,setForm} = useGlobalContext();
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.style.overflow = form ? 'hidden' : 'auto';
+  }, [form])
   return (
       <div className={form ? `modal-overlay`:``}>
         <div className={form ? `main-form-div`:`close main-form-div`}>
@@ -33,7 +38,7 @@ export default function SignIn() {
               <label class='form-text'>Remember Me</label>
             </div>
             <div>
-              <a href='' className='form-text'>
+              <a href='' className='form-text text-primary'>
                 Forgot Password?
               </a>
             </div>
@@ -47,7 +52,7 @@ export default function SignIn() {
           </button>
           <div className='join-us form-text mt-3'>
             Not a Member?
-            <a className='form-text'>  Join Us.</a>
+            <a className='form-text text-primary'>  Join Us.</a>
           </div>
           <button className='close-btn btn' onClick={()=> setForm(false)}>+</button>
         </div>
