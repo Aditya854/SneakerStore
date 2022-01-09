@@ -34,6 +34,11 @@ a:hover {
   opacity: 0.8;
 }
 
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+
 /* NAVBAR */
 .nav {
   padding: 1.3rem 5rem;
