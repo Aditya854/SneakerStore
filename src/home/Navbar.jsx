@@ -27,6 +27,12 @@ export default function Navbar() {
           <a id='nav-links' href="#">
             <li className='mx-3'>Sale</li>
           </a>
+          <a id='nav-links' href="#">
+            <li  className='mx-3'>New Arrivals</li>
+          </a>
+          <a id='nav-links' href="#">
+            <li className='mx-3'>Sale</li>
+          </a>
         </ul>
       </div>
 
