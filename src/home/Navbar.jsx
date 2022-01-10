@@ -1,10 +1,12 @@
 import React from 'react';
 import logoLight from '../Resources/LOGO LIGHT.png';
 import logoDark from '../Resources/LOGO BLACK.png';
+import { useGlobalContext } from '../context'; 
 
 export default function Navbar() {
+  const {form,setForm} = useGlobalContext();
   return (
-    <nav className='nav'>
+    <nav className='nav fixed-top'>
 
       <div className="">
         <img className='logo' src={logoLight} alt='store logo' />
@@ -33,7 +35,8 @@ export default function Navbar() {
       <div className='cart'>
 
           <a href="#"><i class="fas fa-shopping-cart"></i></a>
-          <a href="#"><i class="fas fa-user-circle"></i></a>
+          <hr/>
+          <a href="#" onClick={()=> setForm(true)}><i class="fas fa-user-circle"></i></a>
 
       </div>
     </nav>
