@@ -94,7 +94,7 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  z-index: 2000;
+  /* z-index: 2000; */
 }
 
 .close {
@@ -177,7 +177,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.58);
   opacity: 1;
   transition: opacity 0.5s ease;
-  z-index: 2000;
+  /* z-index: 2000; */
 }
 
 

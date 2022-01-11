@@ -7,10 +7,10 @@ import { useGlobalContext } from '../context';
 
 export default function SignIn() {
   const {form,setForm} = useGlobalContext();
-  useEffect(() => {
-    const body = document.querySelector('body');
-    body.style.overflow = form ? 'hidden' : 'auto';
-  }, [form])
+  // useEffect(() => {
+  //   const body = document.querySelector('body');
+  //   body.style.overflow = form ? 'hidden' : 'auto';
+  // }, [form])
   return (
       <div className={form ? `modal-overlay`:``}>
         <div className={form ? `main-form-div`:`close main-form-div`}>
