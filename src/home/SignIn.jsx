@@ -6,6 +6,7 @@ import { useGlobalContext } from '../context';
 
 export default function SignIn() {
   return (
+    // login form
     <div className='main-account-div'>
       <div className='account-div'>
         <div className='main-form-div'>
@@ -43,7 +44,7 @@ export default function SignIn() {
         </div>
 
         <div className='vertical-line'/>
-        {/* sign-up */}
+        {/* sign-up form */}
 
 
         <div className='main-form-div'>
