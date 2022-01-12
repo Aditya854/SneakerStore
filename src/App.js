@@ -9,9 +9,13 @@ import Women from './pages/Women';
 import Kids from './pages/Kids';
 import NewArrivals from './pages/NewArrivals';
 import Cart from './pages/Cart';
+import {Itemprovider} from './context/GetItem';
+
+
 
 function App() {
   return (
+    <Itemprovider>
     <Router>
     <div>
       <Navbar/>
@@ -29,6 +33,7 @@ function App() {
       <Footer/>
     </div>
 </Router>
+</Itemprovider>
   );
 }
 
