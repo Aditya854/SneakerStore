@@ -34,7 +34,7 @@ a:hover {
   opacity: 0.8;
 }
 
-.btn:focus{
+.btn:focus {
   outline: none;
   box-shadow: none;
 }
@@ -81,50 +81,40 @@ a:hover {
   color: var(--text-light);
 }
 
-
 /* Sign-in form */
+
+.main-account-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
+.vertical-line {
+  height: 21rem;
+  width: 0.07px;
+  background-color: rgb(104, 103, 103);
+}
+
+.account-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  width: 80%;
+  padding: 4rem 6rem;
+}
+
 .main-form-div {
   position: relative;
   background-color: #fff;
-  height: 53vh;
   width: 400px;
-  margin: auto;
-  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   /* z-index: 2000; */
-}
-
-.close {
-  display: none;
-}
-
-.form-logo {
-  padding-top: 1rem;
-  width: 7rem;
-}
-
-.close-btn {
-  display: inline-block;
-  transform: rotate(45deg);
-  content: '\00d7';
-  font-size: 3rem;
-  position: absolute;
-  right: 25px;
-}
-
-.tagline {
-  display: flex;
-  justify-content: center;
-}
-
-.tagline > h3 {
-  font-size: 1.1rem;
-  font-weight: 800;
-  line-height: 0.9;
-  width: 75%;
 }
 
 .form-div {
@@ -165,35 +155,18 @@ a:hover {
   outline: none;
 }
 
-.modal-overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.58);
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  /* z-index: 2000; */
-}
-
-
 /* CAROUSEL */
-.carousel{
+.carousel {
   margin-top: 5rem;
 }
-.carouselImage{
+.carouselImage {
   /* transform: scaleY(0.7); */
   height: 90.55vh;
 }
 
-
 /* FOOTER CSS */
 footer {
-  margin-top: 100vh;
+  /* margin-top: 100vh; */
   padding: 4rem 5rem;
   background-color: var(--bg-dark);
   color: #fff;
@@ -228,4 +201,3 @@ footer a {
   padding-right: 1rem;
   font-size: 1.8rem;
 }
-

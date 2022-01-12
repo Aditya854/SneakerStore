@@ -3,15 +3,14 @@ const AppContext = React.createContext()
 
 
 const AppProvider = ({ children }) => {
-  const [form, setForm] = useState(false);
   return (
-    <AppContext.Provider value={{form,setForm}}>
+    <AppContext.Provider value={{}}>
       {children}
     </AppContext.Provider>
   );
 }
 
-export const useGlobalContext = () => {
+export const useGlobalContext = () => { 
   return useContext(AppContext)
 }
 

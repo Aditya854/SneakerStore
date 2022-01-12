@@ -49,7 +49,7 @@ export default function Navbar() {
 
         <hr/>
 
-        <Link to="/SignIn"onClick={()=> setForm(true)}><i class="fas fa-user-circle"></i>
+        <Link to="/SignIn"><i class="fas fa-user-circle"></i>
         </Link>
 
     </div>

@@ -2,25 +2,15 @@ import react from 'react';
 import { useState, useEffect } from 'react';
 import reactDom from 'react-dom';
 import logo_dark from '../Resources/LOGO BLACK.png';
-import { useGlobalContext } from '../context'; 
-
+import { useGlobalContext } from '../context';
 
 export default function SignIn() {
-  const {form,setForm} = useGlobalContext();
-  // useEffect(() => {
-  //   const body = document.querySelector('body');
-  //   body.style.overflow = form ? 'hidden' : 'auto';
-  // }, [form])
   return (
-      <div className={form ? `modal-overlay`:``}>
-        <div className={form ? `main-form-div`:`close main-form-div`}>
-          <div className='logo-div'>
-            <img className='form-logo mt-4' src={logo_dark} alt='' />
-          </div>
-          {/* <div className='tagline mt-4 text-center'>
-            <h3>Home to every sneaker freak</h3>
-          </div> */}
-          <div className='form-div mt-4'>
+    <div className='main-account-div'>
+      <div className='account-div'>
+        <div className='main-form-div'>
+          <h3 className='mb-4'>Login In</h3>
+          <div className='form-div'>
             <input
               className='form-control mb-3'
               type='text'
@@ -44,18 +34,47 @@ export default function SignIn() {
             </div>
           </div>
           <div className='privacy-policy form-text mt-3'>
-            By logging in, you agree to SneakersStore's Privacy Policy and Terms of
-            Use.
+            By logging in, you agree to SneakersStore's Privacy Policy and Terms
+            of Use.
           </div>
           <button className='sign-in-btn btn btn-dark mt-3' type='submit'>
             Sign In
           </button>
-          <div className='join-us form-text mt-3'>
-            Not a Member?
-            <a className='form-text text-primary'>  Join Us.</a>
+        </div>
+
+        <div className='vertical-line'/>
+        {/* sign-up */}
+
+
+        <div className='main-form-div'>
+          <h3 className='mb-4'>Create Account</h3>
+          <div className='form-div'>
+            <input
+              className='form-control mb-3'
+              type='text'
+              placeholder='First Name'
+            />
+            <input
+              className='form-control mb-3'
+              type='text'
+              placeholder='Last Name'
+            />
+            <input
+              className='form-control mb-3'
+              type='text'
+              placeholder='Email Address'
+            />
+            <input
+              className='form-control'
+              type='password'
+              placeholder='Password'
+            />
           </div>
-          <button className='close-btn btn' onClick={()=> setForm(false)}>+</button>
+          <button className='sign-in-btn btn btn-dark mt-3' type='submit'>
+            Create Account
+          </button>
         </div>
       </div>
+    </div>
   );
 }
