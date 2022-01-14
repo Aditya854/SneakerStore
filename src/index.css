@@ -1,7 +1,7 @@
 :root {
   --text-light: #e8feff;
   --text-dark: #000;
-  --bg-light: #e8feff;
+  --bg-light: white;
   --bg-dark: #000;
 }
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   background-color: var(--bg-light);
 }
 
@@ -25,7 +25,7 @@ h6 {
 }
 
 a {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-decoration: none;
 }
 
@@ -40,18 +40,22 @@ a:hover {
 }
 
 /* NAVBAR */
-.nav {
+.navbar {
   padding: 1.3rem 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
   text-transform: uppercase;
+}
+
+.navbar.active {
+  background-color: white;
 }
 
 .logo {
   margin-top: 0;
   width: 6rem;
+  /* transform: rotate(90deg); */
 }
 
 .links-list {
@@ -63,12 +67,24 @@ a:hover {
   margin: 0 0 0 3rem;
 }
 
+.vv {
+  width: 100%;
+}
+
 #nav-links {
   font-size: 1rem;
   letter-spacing: 2px;
   padding: 0 0.5rem;
   text-decoration: none;
-  color: var(--text-light);
+}
+
+.mx3 {
+  color: white;
+  margin-left: 30px;
+}
+
+.mx3.act {
+  color: #000;
 }
 
 .cart {
@@ -79,6 +95,10 @@ a:hover {
   padding-inline: 1.5rem;
   font-size: 1.7rem;
   color: var(--text-light);
+}
+
+.cart.act > a {
+  color: black;
 }
 
 /* Sign-in form */
@@ -157,11 +177,49 @@ a:hover {
 
 /* CAROUSEL */
 .carousel {
-  margin-top: 5rem;
+  margin-bottom: 6rem;
 }
-.carouselImage {
-  /* transform: scaleY(0.7); */
-  height: 90.55vh;
+/* .carouselImage {
+
+} */
+
+.carousel-item {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 13%;
+  font-size: 10rem;
+}
+.text2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  top: 71%;
+  left: 13%;
+  font-size: 5rem;
+  color: rgb(43, 47, 82);
+}
+
+.text3 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 10rem;
+
+  color: black;
+}
+.text4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  font-size: 7rem;
 }
 
 /* FOOTER CSS */

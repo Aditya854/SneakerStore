@@ -1,12 +1,14 @@
 import React from "react";
 
-import manphoto from "../Resources/Carousel Images/MAN CARAOUSEL.png";
-import manphoto1 from "../Resources/Carousel Images/MAN CARAOUSEL (1).jpeg";
-import shoephoto from "../Resources/Carousel Images/SHOE CARAOUSEL.jpeg";
-import shoephoto1 from "../Resources/Carousel Images/SHOE CARAOUSEL (1).jpeg";
-import womanphoto from "../Resources/Carousel Images/WOMAN CARAOUSEL.jpeg";
-import kidsphoto from "../Resources/Carousel Images/KIDS CARAOUSEL.png";
-import kidsphoto1 from "../Resources/Carousel Images/KIDS CARAOUSEL (1).png";
+import photo1 from "../Resources/SneakPeek/1.png";
+import photo2 from "../Resources/SneakPeek/2.png";
+import photo3 from "../Resources/SneakPeek/3.png";
+import photo4 from "../Resources/SneakPeek/4.png";
+import photo5 from "../Resources/SneakPeek/5.png";
+// import photo6 from "../Resources/SneakPeek/6.png";
+// import photo7 from "../Resources/SneakPeek/7.png";
+// import photo8 from "../Resources/SneakPeek/8.png";
+// import video1 from "../Resources/SneakPeek/wow1.mp4";
 
 export default function Caraosuel() {
   return (
@@ -18,25 +20,23 @@ export default function Caraosuel() {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={manphoto} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
+            <img src={photo1} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
+            <p className="text3">HAVE IT</p>
+            <p className="text4">YOUR WAY</p>
           </div>
           <div className="carousel-item">
-            <img src={shoephoto} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
+            <img src={photo2} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={womanphoto} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
+            <img src={photo3} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
           </div>
           <div className="carousel-item">
-            <img src={kidsphoto1} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
+            <img src={photo4} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
+            <p className="text1">NIKE</p>
+            <p className="text2">FLYING EDITION</p>
           </div>
           <div className="carousel-item">
-            <img src={shoephoto1} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={manphoto1} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
-          </div>
-          <div className="carousel-item">
-            <img src={kidsphoto} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
+            <img src={photo5} className="carouselImage d-block w-100 " data-bs-carousel="4000" alt="..." />
           </div>
         </div>
         <button
