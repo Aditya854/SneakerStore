@@ -24,6 +24,10 @@ h6 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: larger;
+}
+
 a {
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
@@ -266,6 +270,8 @@ footer a {
   position: -webkit-sticky;
   position: sticky;
   top: 80px;
+  padding-top: 20px;
+  padding-bottom: 14px;
 
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -276,18 +282,19 @@ footer a {
     rgb(206, 34, 77) 35%,
     rgb(255, 43, 96) 100%
   );
+
+  /* background: linear-gradient(
+    180deg,
+    rgb(25, 153, 121) 0%,
+    rgb(31, 187, 148) 35%,
+    rgb(35, 206, 163) 100%
+  ); */
 }
 
 .menu1 {
   padding: 20px;
   /* background-color: aquamarine; */
   border-radius: 10px;
-  background: linear-gradient(
-    180deg,
-    rgb(179, 31, 68) 0%,
-    rgb(206, 34, 77) 35%,
-    rgb(255, 43, 96) 100%
-  );
   color: white;
 }
 
@@ -309,4 +316,25 @@ footer a {
   width: 100%;
 
   margin-top: -123px;
+}
+
+.header_searchInput {
+  border-radius: 40px;
+  width: 400px;
+  height: 40px;
+  border: none;
+  margin-top: -4px;
+}
+
+.fa-search {
+  margin-left: 13px;
+  color: white;
+}
+
+.header_search {
+  display: flex;
+}
+
+input:focus {
+  outline: none;
 }
