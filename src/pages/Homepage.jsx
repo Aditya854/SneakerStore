@@ -1,7 +1,7 @@
 import React from 'react';
 import Caraosuel from '../home/Caraousel';
 import video1 from "../Resources/SneakPeek/wow1.mp4";
-import photo7 from "../Resources/SneakPeek/3.png";
+import photo7 from "../Resources/SneakPeek/2.png";
 import Menu from "../home/Menu"
 
 function Homepage() {
