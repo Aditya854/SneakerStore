@@ -2,7 +2,6 @@ import react from 'react';
 import { useState, useEffect } from 'react';
 import reactDom from 'react-dom';
 import logo_dark from '../Resources/LOGO BLACK.png';
-import { useGlobalContext } from '../context';
 
 export default function SignIn() {
   return (

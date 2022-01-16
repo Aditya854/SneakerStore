@@ -1,14 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import logoLight from '../Resources/LOGO LIGHT.png';
 import logoDark from '../Resources/LOGO BLACK.png';
-import { useGlobalContext } from '../context'; 
 import { Link } from 'react-router-dom';
 // import logo from '../Resources/SneakPeek/shoelogo.png';
 // import logo2 from '../Resources/SneakPeek/shoelogo2.png';
 
 
 export default function Navbar() {
-  const {form,setForm} = useGlobalContext();
 
   const [navbar,setNavbar] = useState(false);
   const [mx3,setText] = useState(false);
