@@ -4,6 +4,8 @@ import img1 from "../Resources/mens/aj-2a.jpg"
 import img2 from "../Resources/mens/sp-1.jpg"
 import banner2 from "../Resources/mens/banner-2.jpg"
 import img3 from "../Resources/mens/custom-1.png"
+import { Link } from "react-router-dom"
+
 
 function Men() {
 return (
@@ -17,7 +19,9 @@ return (
                             <h2>New Release of Air Jordan-1</h2>
                             <h4>Step into comfort with the Air Jordan 1 Zoom Air Comfort. Refined to make one of history's most iconic sneakers more wearable</h4>
                             <p>Check out the latest Nike's Air jordans</p>
+                            <Link to="/Stockdisp">
                             <button>checkout</button>
+                            </Link>
                         </div>
                     </div>
 
