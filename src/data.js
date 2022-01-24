@@ -206,6 +206,63 @@ export default [
       "https://superkicks.in/wp-content/uploads/2021/08/383415013.jpg?x98732",
       "https://superkicks.in/wp-content/uploads/2021/08/383415014.jpg?x98732"
     ]
+  },
+  {
+    "id": 11,
+    "company": "Puma",
+    "sex": "women",
+    "price": 8999,
+    "description": "Designed for today’s fearless, creative and powerful women, the first PUMA x LIBERTY collaboration draws on the rich heritage of both brands by bringing a fresh and feminine take on some of our most iconic silhouettes. Part of the classic Rider family, our edgier, stacked-sole Wild Rider has been given the Liberty make-over with an archival floral print, inspired by the natural beauty of a wild garden, across the uppers. Wherever you wander, do it in fierce, feminine style.",
+    "name": "LIBERTY WILD RIDER",
+    "isstock": true,
+    "size": [
+      5,
+      6
+    ],
+    "images": [
+      "https://superkicks.in/wp-content/uploads/2021/09/38219401-1.jpg?x98732",
+      "https://superkicks.in/wp-content/uploads/2021/09/38219401-2.jpg?x98732",
+      "https://superkicks.in/wp-content/uploads/2021/09/38219401-3.jpg?x98732"
+    ]
+  },
+  {
+    "id": 12,
+    "company": "Reebok",
+    "sex": "men",
+    "price": 7499,
+    "description": "Hip hop meets B-ball? Why not? Bold doesn’t even begin to describe the look of these legend-approved Reebok shoes. The 1996 classic gets reissued in this collaboration with Shaquille O’Neal and Damian Lillard. The Dunk Man and Dame graphics fight to make their presence known.",
+    "name": "SHAQNOSIS DAMIAN LILLARD",
+    "isstock": true,
+    "size": [
+      7,
+      8
+    ],
+    "images": [
+      "https://superkicks.in/wp-content/uploads/2021/10/GX2609-1.jpg?x98732",
+      "https://superkicks.in/wp-content/uploads/2021/10/GX2609-2.jpg?x98732",
+      "https://superkicks.in/wp-content/uploads/2021/10/GX2609-3.jpg?x98732",
+      "https://superkicks.in/wp-content/uploads/2021/10/GX2609-4.jpg?x98732"
+    ]
+  },
+  {
+    "id": 13,
+    "company": "Crocs",
+    "sex": "women",
+    "price": 2621,
+    "description": "It was only a matter of time before these two classics collided to create an effervescent collection of shoes and Jibbitz™ charms that Coca-Cola® and clogs fans would love. This Classic Clog features retro. ’90s-inspired all-over graphics and fixed Coca-Cola® logo charms. Each pair is also constructed with a Croslite™ footbed for maximum comfort and includes holes on the upper and backstrap for further personalization. Time to step into this refreshing new style from Coca-Cola® and Crocs.",
+    "name": "COCA COLA CLASSIC 90’S CLOG",
+    "isstock": true,
+    "size": [
+      5,
+      6,
+      7
+    ],
+    "images": [
+      "https://superkicks.in/wp-content/uploads/2021/09/crocs5.jpg?x98732",
+      "https://superkicks.in/wp-content/uploads/2021/09/coca-2.jpg?x98732",
+      "https://superkicks.in/wp-content/uploads/2021/09/crocs3.jpg?x98732",
+      "https://superkicks.in/wp-content/uploads/2021/09/coca-1.jpg?x98732"
+    ]
   }
   
 ]
