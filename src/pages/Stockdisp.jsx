@@ -1,9 +1,39 @@
 import banner from "../Resources/mens/Stockbanner.png"
 import Filters from "./Filters"
 import Singleitem from "./Singleitem"
+import items from '../data';
+import { useState } from "react";
+
+const allGenders = ['all', ...new Set(items.map((item) => item.sex))];
+const allCompanies = [...new Set(items.map((item) => item.company))];
 
 
-function stockdisp() {
+function Stockdisp() {
+    const [shoes, setShoes] = useState(items);
+    const [genderbtn, setGenderbtn] = useState(allGenders);
+    const [companybtn, setCompanybtn] = useState(allCompanies);
+
+    //Filter Function
+    const filterGender = (button) =>{
+
+        if(button === 'all'){
+        setShoes(items);
+        return;
+        }
+
+        const filteredData = items.filter(item => item.sex ===  button);
+        setShoes(filteredData)
+    }
+
+    const filterCompany = (button) =>{
+    
+        const filteredData = items.filter(item => item.company ===  button);
+        setShoes(filteredData)
+  }
+
+
+
+
     return (
         <>
            <img className="mens-banner-1" src={banner} alt=""  style={{height: "65vh"}}/>
@@ -13,7 +43,7 @@ function stockdisp() {
                   <div className="sd-filter-area">
                             <h3>this is filter area</h3>
                                 <div className="sd-filter-arear2">
-                                    <Filters/>
+                                    <Filters companybtn={companybtn} genderbtn={genderbtn} filterGender={filterGender} filterCompany={filterCompany} />
                                 </div>
                   </div>
 
@@ -27,11 +57,7 @@ function stockdisp() {
                                 <ul className="product sd-column-3">
 
                                     {/* can map over here */}
-                                    <Singleitem/>
-                                    <Singleitem/>
-                                    <Singleitem/>
-                                    <Singleitem/>
-                                    
+                                    <Singleitem shoes={shoes}/>
                                     {/* mapping ends */}
 
                                 </ul>
@@ -48,4 +74,4 @@ function stockdisp() {
     )
 }
 
-export default stockdisp
+export default Stockdisp
