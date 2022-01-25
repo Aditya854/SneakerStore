@@ -10,7 +10,7 @@ import Kids from './pages/Kids';
 import NewArrivals from './pages/NewArrivals';
 import Cart from './pages/Cart';
 import Stockdisp from './pages/Stockdisp';
-
+import Singleshoe from './pages/Singleshoe'
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route path='/Cart' element={<Cart />} />
           <Route path='/SignIn' element={<SignIn />} />
           <Route path='/Stockdisp' element={<Stockdisp />} />
-
+          <Route path="/Stockdisp/shoe/:id" element={<Singleshoe />} />
         </Routes>
         <Footer />
     </Router>
