@@ -1,7 +1,7 @@
 :root {
   --text-light: #e8feff;
   --text-dark: #000;
-  --bg-light: white;
+  --bg-light: #e8feff;
   --bg-dark: #000;
 }
 * {
@@ -49,7 +49,7 @@ a:hover {
 }
 
 .navbar.active {
-  background-color: white;
+  background-color: var(--bg-light);
 }
 
 .logo {
