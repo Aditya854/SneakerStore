@@ -6,26 +6,50 @@ function Singleshoe() {
   const { id } = useParams();
   const idx = Number(id);
   let shoeData = {};
-  shoeData.sex="men";
+  shoeData.sex = 'men';
   const getShoe = () => {
     data.map((item) => {
       if (item.id === idx) {
-        shoeData=item;
-        // console.log(shoeData);
+        shoeData = item;
         return;
       }
     });
   };
   getShoe();
-  const {company,sex,price,description,name,isstock} = shoeData;
-  return <div>
-    <h1>{company}</h1>
-    <h1>{sex}</h1>
-    <h1>{price}</h1>
-    <h1>{name}</h1>
-    <h1>{description}</h1>
-    <h1>{isstock}</h1>
-  </div>;
+  const { company, sex, price, description, name, isstock, images } = shoeData;
+
+  const [mainImg, setMainImg] = useState(images[0]);
+  const [activeImg,setActiveImg] = useState(0);
+  console.log(mainImg);
+  const changeImage = (image,index) => {
+    setMainImg(image);
+    setActiveImg(index);
+    console.log(activeImg+1);
+    console.log(index);
+  };
+  return (
+    <div className='main-shoe-div container'>
+      <div className='shoe-details'>
+        <h1>{company}</h1>
+        <h1>{name}</h1>
+        <p>{description}</p>
+        <p>Rs.{price}</p>
+        <button className='btn btn-outline-dark'>Shop Now</button>
+      </div>
+      <div className='shoe-images'>
+        <img src={mainImg} className='main-shoe-image' />
+        <div className='small-shoe-images-div'>
+          {images.map((image,index) => {
+            return (
+              <button className={'btn btn-outline-dark mx-2 mb-5 '} key={index} onClick={() => changeImage(image,index)}>
+                <img className='small-shoe-image' src={image} />
+              </button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Singleshoe;

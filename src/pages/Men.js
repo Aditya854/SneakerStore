@@ -20,7 +20,7 @@ return (
                             <h4>Step into comfort with the Air Jordan 1 Zoom Air Comfort. Refined to make one of history's most iconic sneakers more wearable</h4>
                             <p>Check out the latest Nike's Air jordans</p>
                             <Link to="/Stockdisp">
-                            <button>checkout</button>
+                            <button className="btn btn-outline-dark">checkout</button>
                             </Link>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ return (
                             <h2>New Release of Air Jordan-1</h2>
                             <h4>Step into comfort with the Air Jordan 1 Zoom Air Comfort. Refined to make one of history's most iconic sneakers more wearable</h4>
                             <p>Check out the latest Nike's Air jordans</p>
-                            <button>checkout</button>
+                            <button className="btn btn-outline-dark">checkout</button>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ return (
                                 <h2>New Release of Air Jordan-1</h2>
                                 <h4>Step into comfort with the Air Jordan 1 Zoom Air Comfort. Refined to make one of history's most iconic sneakers more wearable</h4>
                                 <p>Check out the latest Nike's Air jordans</p>
-                                <button>checkout</button>
+                                <button className="btn btn-outline-dark">checkout</button>
                             </div>
                         </div>
 
