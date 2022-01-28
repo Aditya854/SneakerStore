@@ -10,11 +10,11 @@ function Homepage() {
     <div>
         
         <Caraosuel/>
-        <Menu/>
-        <img className='pp' src={photo7}/>
-        <video className='vv' autoPlay muted controls loop>
+        {/* <Menu/> */}
+        {/* <img className='pp' src={photo7}/> */}
+        {/* <video className='vv' autoPlay muted controls loop>
           <source src={video1} type="video/mp4"/>
-          </video>
+          </video> */}
             
     </div>
    

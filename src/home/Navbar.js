@@ -22,14 +22,10 @@ export default function Navbar() {
     }
   }
 
-
   window.addEventListener('scroll', changeBackground);
 
   return (
-      <nav className= {navbar ? 'navbar active fixed-top' : 'navbar fixed-top'} onMouseEnter={() => setNavbar(true) }
-      onMouseLeave={() => {
-      if(window.scrollY < 80)
-      setNavbar(false)}}>
+    <nav className= {navbar ? 'navbar active fixed-top' : 'navbar fixed-top'}>
     <div className="">
       <Link to="/">
       <img className='logo' src={navbar ? logoDark : logoLight} alt='store logo' />
@@ -40,23 +36,23 @@ export default function Navbar() {
       <ul className='links-list'>
 
         <Link to="/Men" id='nav-links' >
-          <li className={navbar ? 'mx3 act' : 'mx3'}>Men</li>
+          <li className={navbar ? 'mx-3 act' : 'mx-3'}>Men</li>
         </Link>
 
         <Link to="/Women" id='nav-links' >
-          <li className={navbar ? 'mx3 act' : 'mx3'}>Women</li>
+          <li className={navbar ? 'mx-3 act' : 'mx-3'}>Women</li>
         </Link>
 
         <Link to="/Kids" id='nav-links' >
-          <li className={navbar ? 'mx3 act' : 'mx3'}>Kids</li>
+          <li className={navbar ? 'mx-3 act' : 'mx-3'}>Kids</li>
         </Link>
 
         <Link to="/NewArrivals" id='nav-links' >
-          <li  className={navbar ? 'mx3 act' : 'mx3'}>New Arrivals</li>
+          <li  className={navbar ? 'mx-3 act' : 'mx-3'}>New Arrivals</li>
         </Link>
 
         <Link to="/Sale" id='nav-links' >
-          <li className={navbar ? 'mx3 act' : 'mx3'}>Sale</li>
+          <li className={navbar ? 'mx-3 act' : 'mx-3'}>Sale</li>
         </Link>
       </ul>
     </div>

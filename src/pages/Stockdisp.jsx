@@ -1,4 +1,4 @@
-import banner from "../Resources/mens/Stockbanner.png"
+import banner from "../Resources/mens/Stockbanner1.jpeg"
 import Filters from "./Filters"
 import Singleitem from "./Singleitem"
 import items from '../data';
@@ -48,12 +48,12 @@ function Stockdisp() {
 
     return (
         <>
-           <img className="mens-banner-1" src={banner} alt=""  style={{height: "65vh"}}/>
+           <img className="mens-banner-1" src={banner} alt=""  style={{height: "55vh", objectFit: "cover", objectPosition: "center"}}/>
            
            <div className="stockdiv">
                <div className="sd-col-full">
                   <div className="sd-filter-area">
-                            <h3>this is filter area</h3>
+                            {/* <h3>this is filter area</h3> */}
                                 <div className="sd-filter-arear2">
                                     <Filters companybtn={companybtn} genderbtn={genderbtn} price={price}
                                     filterPrice={filterPrice} filterGender={filterGender} filterCompany={filterCompany} />
@@ -63,9 +63,6 @@ function Stockdisp() {
 
                    <div className="sd-content-area">
                        <main className="sd-site-main">
-                           <div className="sd-top-line">
-                               <h3>This is display area</h3>
-                           </div>
                            <div className="sd-column-3">
                                 <ul className="product sd-column-3">
 

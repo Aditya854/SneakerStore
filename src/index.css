@@ -1,7 +1,8 @@
 :root {
-  --text-light: #e8feff;
+  --text-light: #ffffff;
   --text-dark: #000;
-  --bg-light: #e8feff;
+  --text-desc: rgb(66, 66, 66);
+  --bg-light: #ffffff;
   --bg-dark: #000;
 }
 * {
@@ -13,6 +14,10 @@
 body {
   font-family: 'PT Sans', sans-serif;
   /* background-color: var(--bg-light); */
+}
+
+li {
+  list-style: none;
 }
 
 h1,
@@ -34,7 +39,7 @@ a {
 }
 
 a:hover {
-  color: var(--bg-light);
+  /* color: var(--bg-light); */
   opacity: 0.8;
 }
 
@@ -53,7 +58,8 @@ a:hover {
 }
 
 .navbar.active {
-  background-color: white;
+  background-color: var(--bg-light);
+  box-shadow: 0 10px 12px -15px rgb(160, 160, 160);
 }
 
 .logo {
@@ -71,24 +77,16 @@ a:hover {
   margin: 0 0 0 3rem;
 }
 
-.vv {
-  width: 100%;
-}
-
 #nav-links {
   font-size: 1rem;
   letter-spacing: 2px;
   padding: 0 0.5rem;
   text-decoration: none;
+  color: var(--text-light);
 }
 
-.mx3 {
-  color: white;
-  margin-left: 30px;
-}
-
-.mx3.act {
-  color: #000;
+.act {
+  color: var(--text-dark);
 }
 
 .cart {
@@ -102,11 +100,11 @@ a:hover {
 }
 
 .cart.act > a {
-  color: black;
+  color: var(--text-dark);
 }
 
-/* Sign-in form */
 
+/* SIGN-IN FORM */
 .main-account-div {
   display: flex;
   align-items: center;
@@ -180,12 +178,6 @@ a:hover {
 }
 
 /* CAROUSEL */
-/* .carousel {
-  margin-bottom: 6rem;
-} */
-/* .carouselImage {
-
-} */
 
 .carousel-item {
   position: relative;
@@ -226,10 +218,10 @@ a:hover {
   font-size: 7rem;
 }
 
+
 /* FOOTER CSS */
 footer {
-  /* margin-top: 100vh; */
-  padding: 4rem 5rem;
+  padding: 3rem 5rem;
   background-color: var(--bg-dark);
   color: #fff;
 }
@@ -251,7 +243,7 @@ footer a {
 .footer-col {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .footer-col > h5 {
   margin-bottom: 1.5rem;
@@ -264,6 +256,7 @@ footer a {
   font-size: 1.8rem;
 }
 
+/* MENU  */
 .menu {
   display: flex;
   justify-content: space-around;
@@ -314,7 +307,6 @@ footer a {
 
 .pp {
   width: 100%;
-
   margin-top: -123px;
 }
 
@@ -427,16 +419,16 @@ input:focus {
   text-align: center;
 }
 
+
+/* STOCK DISPLAY CSS */
 .sd-col-full {
-  max-width: 2000px;
-  padding-left: 2.61em;
-  padding-right: 2.61em;
+  padding: 3rem 5rem 0;
   display: flex;
 }
 
 .sd-content-area {
-  /* float: right; */
-  width: 78%;
+  width: 80%;
+  padding: 0 0 0 1rem;
 }
 
 main .sd-site-main {
@@ -448,36 +440,27 @@ main .sd-site-main {
 }
 
 .sd-column-3 {
-  /* height: 700px; */
   width: 100%;
-  /* background-color: rgb(179, 31, 68); */
 }
 .sd-filter-area {
   width: 22%;
-  /* float: left; */
   padding-right: 1.7rem;
+  margin-bottom: 3rem;
 }
 
 .sd-filter-arear2 {
-  height: 700px;
-  /* background-color: rgb(221, 192, 199); */
 }
 
 ul.product {
   clear: both;
   margin-bottom: 0;
-}
-
-ul.product {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% + 30px);
-  margin-left: -15px;
-  padding-right: 1.8rem;
 }
 
 .si-col-1 {
-  width: 33.23%;
+  width: 33%;
   float: left;
   /* flex-wrap: wrap; */
   align-items: flex-start;
@@ -485,13 +468,16 @@ ul.product {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
+  gap: 10rem;
 }
 
-.filter-o-heading {
-  padding: 0.6em 1em;
+.filt-override{
+  padding-left: 0;
 }
 
-
+ul.filt-ul {
+  padding-left: 0;
+}
 
 .filter h4 {
   padding-bottom: 10px;
@@ -501,18 +487,12 @@ ul.product {
   margin-bottom: 0;
 }
 
-li {
-  list-style: none;
-}
-
-ul.filt-ul {
-  padding-left: 0;
-}
 
 li.filter-li-option {
   margin-bottom: 0.25em;
   line-height: 1.5;
   padding: 5px 0;
+  text-transform: capitalize;
 }
 
 .filter-li-option label {
@@ -520,9 +500,15 @@ li.filter-li-option {
 }
 
 /* Single Shoe Page */
+.nav-patti{
+  background-color: var(--bg-dark);
+  height: 5.4rem;
+}
 .main-shoe-div {
+  padding: 2rem 5rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .shoe-details {
@@ -534,17 +520,27 @@ li.filter-li-option {
 }
 
 .shoe-images {
-  width: 55%;
+  width: 50%;
   position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
+.shoe-desc{
+  color: var(--text-desc);
+}
+
 .small-shoe-images-div {
   position: absolute;
   bottom: 0;
   align-self: center;
+}
+
+.small-shoe-images-coll{
+  /* outline: 1.8px solid black; */
+  box-shadow: 0 0 10px -5px black;
+  border-radius: 18px;
 }
 
 .small-shoe-image {

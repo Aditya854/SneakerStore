@@ -27,12 +27,13 @@ function Singleshoe() {
     console.log(activeImg+1);
     console.log(index);
   };
-  return (
-    <div className='main-shoe-div container'>
+  return (<>
+    <div className="nav-patti"></div>
+    <div className='main-shoe-div'>
       <div className='shoe-details'>
-        <h1>{company}</h1>
+        <h5>{company}</h5>
         <h1>{name}</h1>
-        <p>{description}</p>
+        <p className='shoe-desc'>{description}</p>
         <p>Rs.{price}</p>
         <button className='btn btn-outline-dark'>Shop Now</button>
       </div>
@@ -41,7 +42,7 @@ function Singleshoe() {
         <div className='small-shoe-images-div'>
           {images.map((image,index) => {
             return (
-              <button className={'btn btn-outline-dark mx-2 mb-5 '} key={index} onClick={() => changeImage(image,index)}>
+              <button className={'btn small-shoe-images-coll mx-2 mb-5 '} key={index} onClick={() => changeImage(image,index)}>
                 <img className='small-shoe-image' src={image} />
               </button>
             );
@@ -49,6 +50,7 @@ function Singleshoe() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
