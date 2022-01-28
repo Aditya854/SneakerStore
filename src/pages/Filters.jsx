@@ -1,7 +1,29 @@
-import React from "react"
+import React, { Fragment } from "react"
+import Slider from 'rc-slider'
+import 'rc-slider/assets/index.css';
+import { useState } from "react";
 
 
-function Filters({companybtn,genderbtn, filterGender,filterCompany}) {
+
+const {createSliderWithTooltip} = Slider;
+const Range = createSliderWithTooltip(Slider.Range)
+
+
+function Filters({companybtn,genderbtn,price,filterPrice, filterGender,filterCompany}) {
+
+  const [pricee, setPrice] = useState([1,20000])
+
+ 
+
+   const handleChange = (pricee) =>{
+    // setPrice({pricee});
+    // console.log(pricee)
+    filterPrice(pricee)
+  }
+
+
+  
+
     return (
      <>
             <h4 className="filter-o-heading">Search/Filters</h4>
@@ -38,8 +60,30 @@ function Filters({companybtn,genderbtn, filterGender,filterCompany}) {
                        
                        } 
                    </div>
-
-
+                    
+                   <h4 className="filt-div">Filter by Price</h4>
+                     <Fragment>
+                       <div className="filt-buttons-slider">
+                         {/* {pricee[0]} - {pricee[1]}  */}
+                         <Range
+                         marks={{
+                           1:`$1`,
+                           20000: `$20000`
+                         }}
+                         min = {1}
+                         max = {20000}
+                         defaultValue={[1,5000]}
+                         tipFormatter={value => `$${value}`}
+                          tipProps={{
+                            placement: "top",
+                            visible: true
+                           }}
+                          //  value={pricee}
+                          onChange={setPrice}
+                          onAfterChange={handleChange}
+                         />
+                       </div>
+                     </Fragment>
 
                  
 
