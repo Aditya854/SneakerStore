@@ -5,6 +5,9 @@ import items from '../data';
 import { useState } from "react";
 import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css';
+// import Pagination from '@mui/material/Pagination';
+import  Paginationn  from "./Paginationn";
+
 
 const allGenders = ['all', ...new Set(items.map((item) => item.sex))];
 const allCompanies = [...new Set(items.map((item) => item.company))];
@@ -48,12 +51,12 @@ function Stockdisp() {
 
     return (
         <>
-           <img className="mens-banner-1" src={banner} alt=""  style={{height: "55vh", objectFit: "cover", objectPosition: "center"}}/>
+           <img className="mens-banner-1" src={banner} alt=""  style={{height: "70vh"}}/>
            
            <div className="stockdiv">
                <div className="sd-col-full">
                   <div className="sd-filter-area">
-                            {/* <h3>this is filter area</h3> */}
+                            <h3>this is filter area</h3>
                                 <div className="sd-filter-arear2">
                                     <Filters companybtn={companybtn} genderbtn={genderbtn} price={price}
                                     filterPrice={filterPrice} filterGender={filterGender} filterCompany={filterCompany} />
@@ -61,13 +64,18 @@ function Stockdisp() {
                   </div>
 
 
+
                    <div className="sd-content-area">
                        <main className="sd-site-main">
+                           <div className="sd-top-line">
+                               <h3>This is display area</h3>
+                           </div>
                            <div className="sd-column-3">
                                 <ul className="product sd-column-3">
 
                                     {/* can map over here */}
                                     <Singleitem shoes={shoes}/>
+                                    <Paginationn />
                                     {/* mapping ends */}
 
                                 </ul>
@@ -78,7 +86,7 @@ function Stockdisp() {
                    
                </div>
             </div>
-
+            
             
         </>
     )

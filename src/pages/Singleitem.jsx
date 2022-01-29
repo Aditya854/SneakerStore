@@ -1,9 +1,12 @@
-import img from '../Resources/mens/aj-3.jpg';
 import { Link } from 'react-router-dom';
+import Pagination from '@mui/material/Pagination';
+
 
 function Singleitem({ shoes }) {
   return (
     <>
+     
+                
       <div className='item'>
         {shoes.map((item) => {
           return (
@@ -24,6 +27,7 @@ function Singleitem({ shoes }) {
           );
         })}
       </div>
+
     </>
   );
 }
