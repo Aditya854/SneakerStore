@@ -2,13 +2,16 @@ import { Link } from 'react-router-dom';
 import Pagination from '@mui/material/Pagination';
 
 
-function Singleitem({ shoes }) {
+ 
+function Singleitem({ shoes ,pagee,itemsPerPage}) {
   return (
     <>
-     
+       
                 
       <div className='item'>
-        {shoes.map((item) => {
+        {shoes
+        .slice((pagee - 1) * itemsPerPage, pagee * itemsPerPage)
+        .map((item) => {
           return (
             <div className='si-col-1'>
               <Link
