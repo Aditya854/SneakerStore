@@ -30,13 +30,6 @@ function Singleshoe() {
   return (<>
     <div className="nav-patti"></div>
     <div className='main-shoe-div'>
-      <div className='shoe-details'>
-        <h5>{company}</h5>
-        <h1>{name}</h1>
-        <p className='shoe-desc'>{description}</p>
-        <p>Rs.{price}</p>
-        <button className='btn btn-outline-dark'>Shop Now</button>
-      </div>
       <div className='shoe-images'>
         <img src={mainImg} className='main-shoe-image' />
         <div className='small-shoe-images-div'>
@@ -49,6 +42,14 @@ function Singleshoe() {
           })}
         </div>
       </div>
+      <div className='shoe-details'>
+        <h6>{company}</h6>
+        <h1 className=''>{name}</h1>
+        <p className='h5 mb-5'>Rs. {price}</p>
+        <p className='shoe-desc mb-5'>{description}</p>
+        <button className='btn btn-outline-dark'>Shop Now</button>
+      </div>
+      
     </div>
     </>
   );

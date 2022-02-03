@@ -1,7 +1,7 @@
 :root {
   --text-light: #ffffff;
   --text-dark: #000;
-  --text-desc: rgb(66, 66, 66);
+  --text-desc: rgb(105, 105, 105);
   --bg-light: #ffffff;
   --bg-dark: #000;
 }
@@ -448,8 +448,6 @@ main .sd-site-main {
   margin-bottom: 3rem;
 }
 
-
-
 ul.product {
   clear: both;
   margin-bottom: 0;
@@ -516,6 +514,7 @@ li.filter-li-option {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-left: 2rem;
 }
 
 .shoe-images {
