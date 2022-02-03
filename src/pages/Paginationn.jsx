@@ -18,15 +18,13 @@ function Paginationn({shoes, noOfPages}) {
         setPage(value);
       };
 
-     console.log(pagee,itemsPerPage)
+    //  console.log(pagee,itemsPerPage)
 
     return (
         <div className='paggin-div-1'>
 
          <Singleitem shoes={shoes} pagee={pagee} itemsPerPage={itemsPerPage}/>
 
-       
-       
            <Pagination 
             count={noOfPages}
             page={pagee}
@@ -37,13 +35,6 @@ function Paginationn({shoes, noOfPages}) {
             showLastButton
             // classes={{ ul: classes.paginator }}
             />
-
-
-
-            
-           
-            
-            
         </div>
     )
 }
