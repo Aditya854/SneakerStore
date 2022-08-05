@@ -2,7 +2,7 @@
 
 1.1 <img src="https://user-images.githubusercontent.com/78819364/183139572-7bb3ca94-dea8-4946-b340-402e4422ebc1.png" widht="50%" height="60%">
 
-1.2 <img src="sneaker_store 2](https://user-images.githubusercontent.com/78819364/183139563-7efe850d-b684-4a89-8dd1-a6c908e7c42a.png" widht="50%" height="60%">
+1.2 <img src="https://user-images.githubusercontent.com/78819364/183139563-7efe850d-b684-4a89-8dd1-a6c908e7c42a.png" widht="50%" height="60%">
 
 1.3 <img src="https://user-images.githubusercontent.com/78819364/183139400-794352c7-3f84-4669-94fd-e8f7b1758fcf.png" widht="50%" height="60%">
 
